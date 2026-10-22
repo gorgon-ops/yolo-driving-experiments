@@ -1,0 +1,22 @@
+master 16855 frames; sampling every 84 -> 201 frames
+  10/201 frames  69s elapsed  eta 1317s
+  20/201 frames  149s elapsed  eta 1345s
+  30/201 frames  231s elapsed  eta 1317s
+  40/201 frames  307s elapsed  eta 1235s
+  50/201 frames  387s elapsed  eta 1168s
+  60/201 frames  469s elapsed  eta 1101s
+  70/201 frames  600s elapsed  eta 1122s
+  80/201 frames  732s elapsed  eta 1107s
+  90/201 frames  860s elapsed  eta 1061s
+  100/201 frames  951s elapsed  eta 961s
+  110/201 frames  1040s elapsed  eta 860s
+  120/201 frames  1133s elapsed  eta 765s
+  130/201 frames  1224s elapsed  eta 668s
+  140/201 frames  1305s elapsed  eta 569s
+  150/201 frames  1386s elapsed  eta 471s
+  160/201 frames  1467s elapsed  eta 376s
+  170/201 frames  1548s elapsed  eta 282s
+  180/201 frames  1627s elapsed  eta 190s
+  190/201 frames  1704s elapsed  eta 99s
+  200/201 frames  1784s elapsed  eta 9s
+wrote results_resolution.pkl: 2010 records in 1793s

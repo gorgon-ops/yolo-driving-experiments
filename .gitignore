@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+
+# Too large for GitHub: the source footage, the full-size demo and the YOLO
+# weights (ultralytics downloads them on first use).
+1080p_video_driving_sample.mp4
+demo_detections.mp4
+*.pt
+
+# Raw experiment output; the CSVs, figures and FINDINGS.md carry the results.
+*.pkl

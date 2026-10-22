@@ -1,0 +1,7 @@
+284 frames, 263 reference objects
+
+config                                  recall    prec      F1      ms    fps   tiny  small    med  large
+full frame  imgsz=1280 (baseline)        0.745   0.751   0.748    1500   0.67   0.760  0.681  0.754  0.857
+band 90-410  (320 tall) native           0.730   0.516   0.605    1129   0.89   0.800  0.750  0.725  0.643
+band 90-570  (480 tall) native           0.715   0.618   0.663    1491   0.67   0.720  0.736  0.717  0.643
+band 90-730  (640 tall) native           0.719   0.652   0.684    1795   0.56   0.760  0.736  0.710  0.679

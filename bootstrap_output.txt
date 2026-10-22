@@ -1,0 +1,30 @@
+kept 2840/2840 records (driving segment, road band, driver excluded)
+scored objects per condition: 263  across 180 frames and 17 traffic events
+NOTE: boxes within one event are the same vehicles seen repeatedly -- effective N is closer to the event count than the box count.
+cluster bootstrap over 17 traffic events, B=4000
+
+Does extra source resolution help when imgsz is FIXED at 640?
+  fixed640 @ 1080p             0.433 [0.328,0.622]
+  fixed640 @ 480p              0.502 [0.412,0.698]
+     diff -0.068  95% CI [-0.291,+0.136]  -> not distinguishable
+
+Does 1080p beat 720p when imgsz scales?
+  native @ 1080p               0.745 [0.625,0.885]
+  native @ 720p                0.753 [0.650,0.892]
+     diff -0.008  95% CI [-0.179,+0.160]  -> not distinguishable
+
+Does 720p beat 480p when imgsz scales?
+  native @ 720p                0.753 [0.648,0.890]
+  native @ 480p                0.589 [0.483,0.774]
+     diff +0.163  95% CI [-0.047,+0.329]  -> not distinguishable
+
+Does scaling imgsz beat fixing it, at the same 1080p source?
+  native @ 1080p               0.745 [0.636,0.882]
+  fixed640 @ 1080p             0.433 [0.327,0.619]
+     diff +0.312  95% CI [+0.109,+0.478]  -> SIGNIFICANT
+
+TINY objects only (<24px): native 1080p vs fixed640 1080p
+  native @1080p, tiny          0.760 [0.565,0.938]
+  fixed640 @1080p, tiny        0.000 [0.000,0.000]
+     diff +0.760  95% CI [+0.565,+0.938]  -> SIGNIFICANT
+
